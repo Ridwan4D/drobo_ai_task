@@ -40,6 +40,14 @@
     font-family: "Inter", sans-serif;
 }
 
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
 .wm_heading {
     font-family: "Outfit", sans-serif;
     font-weight: bold;
@@ -47,4 +55,54 @@
     line-height: 48px;
 }
 
+.primary_text {
+    color: var(--primary_color);
+}
+
+.deepViolet_text {
+    color: var(--deep_violet);
+}
+
+.span_color {
+    color: var(--span_color);
+}
+
+.text_32 {
+    font-size: 32px;
+}
+
+.lh_24 {
+    line-height: 24px;
+}
+
+.lh_62 {
+    line-height: 62px;
+}
+
+.gap_40 {
+    gap: 40px;
+}
+
+.radius_32 {
+    border-radius: 32px;
+}
+
 /* --------------------- common styling end --------------------- */
+
+/* --------------- header section start --------------- */
+#header {
+    background-color: var(--hero_bg);
+}
+
+.sing_in_btn {
+    background-color: var(--pastel_lilac);
+    padding: 10px 24px;
+    transition: all ease .3s;
+}
+
+.sing_in_btn:hover {
+    color: #AE6CE1;
+    background-color: var(--baby_blue);
+}
+
+/* --------------- header section end --------------- */
