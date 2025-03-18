@@ -90,9 +90,26 @@
 /* --------------------- common styling end --------------------- */
 
 /* --------------- header section start --------------- */
-#header {
-    background-color: var(--hero_bg);
+
+/* .navbar {
+    top: -100%;
+    animation: slideDown 2s ease-in-out forwards;
 }
+
+@keyframes slideDown {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0;
+    }
+} */
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
 
 .sing_in_btn {
     background-color: var(--pastel_lilac);
