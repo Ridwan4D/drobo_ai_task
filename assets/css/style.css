@@ -9,6 +9,7 @@
     --dark_lavender: #675B70;
     --gradient_1: #E4C7FF;
     --gradient_2: #FFFFFF00;
+    --border: #E9E1FF;
     --hero_bg: #FCF9FF;
     --pastel_lilac: #F8F1FC;
     --baby_blue: #E5EFFF;
@@ -53,6 +54,8 @@
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
+    text-align: center;
+    color: var(--primary_color);
 }
 
 .primary_text {
@@ -63,8 +66,16 @@
     color: var(--deep_violet);
 }
 
+.darkLavender_text {
+    color: var(--dark_lavender);
+}
+
 .span_color {
     color: var(--span_color);
+}
+
+.text_xs {
+    font-size: 14px;
 }
 
 .text_32 {
@@ -83,8 +94,26 @@
     gap: 40px;
 }
 
+.radius_20 {
+    border-radius: 20px;
+}
+
 .radius_32 {
     border-radius: 32px;
+}
+
+
+.section_title {
+    max-width: 251px;
+    align-items: center;
+    border: .6px solid var(--border);
+    background: linear-gradient(to right, var(--gradient_1), var(--gradient_2));
+}
+
+.section_title_div {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--span_color);
 }
 
 /* --------------------- common styling end --------------------- */
@@ -97,7 +126,7 @@
 
 .navbar {
     top: -100%;
-    animation: slideDown 2s ease-in-out forwards;    
+    animation: slideDown 2s ease-in-out forwards;
 }
 
 @keyframes slideDown {
@@ -130,3 +159,16 @@
 }
 
 /* --------------- header section end --------------- */
+
+/* --------------- hero section start --------------- */
+#hero_section {
+    background: var(--hero_bg);
+    padding: 56px 0 48px;
+}
+
+.hero_heading {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+/* --------------- hero section end --------------- */
