@@ -90,6 +90,10 @@
     line-height: 62px;
 }
 
+.gap_20 {
+    gap: 20px;
+}
+
 .gap_40 {
     gap: 40px;
 }
@@ -116,6 +120,23 @@
     background: var(--span_color);
 }
 
+.common_btn_1,
+.common_btn_2 {
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    font-size: 18px;
+    color: var(--white);
+    border-radius: 40px;
+    border: 1px solid var(--deep_violet);
+    background: var(--deep_violet);
+    padding: 16px 28px;
+}
+
+.common_btn_2 {
+    color: var(--deep_violet);
+    background: transparent;
+}
+
 /* --------------------- common styling end --------------------- */
 
 /* --------------- header section start --------------- */
@@ -126,18 +147,10 @@
 
 .navbar {
     top: -100%;
+    background: var(--hero_bg);
     animation: slideDown 2s ease-in-out forwards;
 }
 
-@keyframes slideDown {
-    from {
-        top: -100%;
-    }
-
-    to {
-        top: 0;
-    }
-}
 
 .nav-link.dropdown-toggle::after {
     display: none;
@@ -164,6 +177,30 @@
 #hero_section {
     background: var(--hero_bg);
     padding: 56px 0 48px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.hero_extra_container {
+    height: 100%;
+    width: 100%;
+}
+
+.outer_ring,
+.inner_ring {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero_extra_container {
+    height: 100%;
+    background: var(--hero_bg);
+}
+
+.outer_ring {
+    animation: slideDown_2 2s ease-in-out forwards;
 }
 
 .hero_heading {
@@ -171,4 +208,32 @@
     line-height: 55px;
 }
 
+.hero_ellipse {
+    bottom: -210px;
+}
+
 /* --------------- hero section end --------------- */
+
+
+/* =========== animation ============= */
+@keyframes slideDown {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown_2 {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 100px;
+    }
+}
