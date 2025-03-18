@@ -110,6 +110,9 @@
     display: none;
 }
 
+.menu_icon {
+    display: none;
+}
 
 .sing_in_btn {
     background-color: var(--pastel_lilac);
