@@ -90,10 +90,14 @@
 /* --------------------- common styling end --------------------- */
 
 /* --------------- header section start --------------- */
+#header {
+    height: 110px;
+    background: var(--hero_bg);
+}
 
-/* .navbar {
+.navbar {
     top: -100%;
-    animation: slideDown 2s ease-in-out forwards;
+    animation: slideDown 2s ease-in-out forwards;    
 }
 
 @keyframes slideDown {
@@ -104,7 +108,7 @@
     to {
         top: 0;
     }
-} */
+}
 
 .nav-link.dropdown-toggle::after {
     display: none;
