@@ -148,7 +148,7 @@
 .navbar {
     top: -100%;
     background: var(--hero_bg);
-    animation: slideDown 2s ease-in-out forwards;
+    animation: slideDown 2.2s ease-in-out forwards;
 }
 
 
@@ -182,14 +182,9 @@
     min-height: 100vh;
 }
 
-.hero_extra_container {
-    height: 100%;
-    width: 100%;
-}
 
 .outer_ring,
 .inner_ring {
-    position: relative;
     z-index: 2;
 }
 
@@ -200,7 +195,11 @@
 }
 
 .outer_ring {
-    animation: slideDown_2 2s ease-in-out forwards;
+    top: -100%;
+    height: 0;
+    width: 100%;
+    animation: slideDown_2 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    overflow: hidden;
 }
 
 .hero_heading {
@@ -211,6 +210,24 @@
 .hero_ellipse {
     bottom: -210px;
 }
+
+.plain,
+.note {
+    position: absolute;
+    animation-duration: 2s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.plain {
+    animation-name: fly_1;
+}
+
+.note {
+    animation-name: fly_2;
+}
+
 
 /* --------------- hero section end --------------- */
 
@@ -229,11 +246,50 @@
 }
 
 @keyframes slideDown_2 {
-    from {
+    0% {
         top: -100%;
+        height: 0;
+        opacity: 0;
     }
 
-    to {
-        top: 100px;
+    30% {
+        /* top: 0; */
+        height: 50%;
+        opacity: 1;
+    }
+
+    /* 
+    60% {
+        top: 50px;
+        height: 50%;
+    } */
+
+    100% {
+        top: 70px;
+        height: 100%;
+    }
+}
+
+@keyframes fly_1 {
+    0% {
+        top: -100%;
+        left: 0;
+    }
+
+    100% {
+        top: 200px;
+        left: 21%;
+    }
+}
+
+@keyframes fly_2 {
+    0% {
+        top: -100%;
+        right: 0;
+    }
+
+    100% {
+        top: 180px;
+        right: 21%;
     }
 }
