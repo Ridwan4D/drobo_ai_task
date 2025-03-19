@@ -215,9 +215,10 @@
 
 .plain,
 .note {
+    opacity: 0;
     position: absolute;
     animation-duration: 2s;
-    /* animation-delay: .8s; */
+    animation-delay: .8s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -281,6 +282,7 @@
     100% {
         top: -170px;
         left: 4.5%;
+        opacity: 1;
     }
 }
 
@@ -293,5 +295,6 @@
     100% {
         top: -170px;
         right: 4.5%;
+        opacity: 1;
     }
 }
