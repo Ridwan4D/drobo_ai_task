@@ -199,7 +199,7 @@
     height: 0;
     width: 100%;
     animation: slideDown_2 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero_heading {
@@ -208,7 +208,9 @@
 }
 
 .hero_ellipse {
-    bottom: -210px;
+    margin-bottom: 40px;
+    bottom: -250px;
+    z-index: -1;
 }
 
 .plain,
@@ -216,7 +218,7 @@
     position: absolute;
     animation-duration: 2s;
     /* animation-delay: .8s; */
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -272,24 +274,24 @@
 
 @keyframes fly_1 {
     0% {
-        top: -100%;
-        left: 0;
+        top: -700px;
+        left: -100%;
     }
 
     100% {
-        top: 200px;
-        left: 21%;
+        top: -170px;
+        left: 4.5%;
     }
 }
 
 @keyframes fly_2 {
     0% {
-        top: -100%;
-        right: 0;
+        top: -700px;
+        right: -100%;
     }
 
     100% {
-        top: 180px;
-        right: 21%;
+        top: -170px;
+        right: 4.5%;
     }
 }

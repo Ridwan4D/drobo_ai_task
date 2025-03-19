@@ -1,3 +1,36 @@
+@media (max-width:1440px) {
+
+    /* ---------------------------- hero section start ---------------------------- */
+    .hero_ellipse {
+        bottom: -220px;
+    }
+
+    /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: -190px;
+            left: 5.2%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: -190px;
+            right: 5.2%;
+        }
+    }
+}
+
 @media (max-width:1024px) {
     .container {
         padding: 0 15px !important;
@@ -5,7 +38,7 @@
 
     /* ---------------------------- header start ---------------------------- */
     #header {
-        height: auto;
+        max-height: 70px;
     }
 
     .navbar {
@@ -21,11 +54,73 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 115px 0 48px;
+        min-height: 119vh;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: -140px;
+            left: 3%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: -140px;
+            right: 3%;
+        }
+    }
 }
 
+@media (max-width:991px) {
+
+    /* ---------------------------- hero section start ---------------------------- */
+    .hero_ellipse {
+        width: 110%;
+    }
+
+    .plain,
+    .note {
+        width: 7%;
+    }
+
+    /* ---------------------------- hero section end ---------------------------- */
+
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: -75px;
+            left: 2%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: -75px;
+            right: 2%;
+        }
+    }
+}
 
 @media (max-width:767px) {
     .container {
@@ -34,11 +129,12 @@
 
     /* ---------------------------- header start ---------------------------- */
     #header {
-        height: auto;
+        max-height: 45px;
     }
 
     .navbar {
         background: var(--hero_bg);
+        z-index: 9998 !important;
     }
 
     .nav {
@@ -54,6 +150,7 @@
         align-items: center;
         overflow: hidden;
         background: var(--hero_bg);
+        z-index: 9999 !important;
     }
 
     #menu_list {
@@ -68,6 +165,7 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 90px 0 48px;
+        min-height: 119vh;
     }
 
     .hero_heading {
@@ -75,14 +173,66 @@
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: -30px;
+            left: 3%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: -30px;
+            right: 3%;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
     .container {
-        padding: 0 10px !important;
+        padding: 0 16px !important;
+    }
+
+    .common_btn_1,
+    .common_btn_2 {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .section_title {
+        font-size: 9px !important;
+    }
+
+    .section_title>.text_xs {
+        font-size: 8px !important;
     }
 
     /* ---------------------------- header start ---------------------------- */
+    #header {
+        max-height: 15px;
+    }
+
     .navbar {
         padding: 16px !important;
     }
@@ -95,9 +245,52 @@
     }
 
     .hero_heading {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 13px !important;
+    }
+
+    .hero_para {
+        font-size: 12px !important;
+        padding: 0 16px;
+    }
+
+    .hero_ellipse {
+        bottom: -150px;
+    }
+
+    .plain {
+        width: 30px;
+        height: 34px;
+    }
+
+    .note {
+        width: 32px;
+        height: 32px;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: 12px;
+            left: 6.5%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: 12px;
+            right: 6.5%;
+        }
+    }
 }
