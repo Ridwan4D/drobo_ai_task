@@ -123,14 +123,27 @@
 .common_btn_1,
 .common_btn_2 {
     font-family: "Roboto", sans-serif;
-    /* font-weight: 500; */
     font-size: 18px;
     color: var(--white);
     border-radius: 40px;
     border: 1px solid var(--deep_violet);
     background: var(--deep_violet);
     padding: 16px 28px;
+    transition: all 1s ease-in-out;
+    background-size: 300% 300%;
 }
+
+.common_btn_1 {
+    background: linear-gradient(135deg, var(--deep_violet) 50%, #a40cd3 50%);
+    background-size: 300% 300%;
+    background-position: left top;
+}
+
+.common_btn_1:hover {
+    background-position: right bottom;
+    border: 1px solid #a40cd3;
+}
+
 
 .common_btn_2 {
     color: var(--deep_violet);
