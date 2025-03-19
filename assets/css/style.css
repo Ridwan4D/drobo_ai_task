@@ -15,6 +15,8 @@
     --baby_blue: #E5EFFF;
     --soft_lilac: #F0E7F9;
     --soft_white_gray: #F5F5F6;
+    --dark_gray: #686868;
+    --davy_gray: #585858;
 }
 
 * {
@@ -53,7 +55,7 @@
     font-family: "Outfit", sans-serif;
     font-weight: bold;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 60px;
     text-align: center;
     color: var(--primary_color);
 }
@@ -74,8 +76,32 @@
     color: var(--span_color);
 }
 
+.darkGray_text {
+    color: var(--dark_gray);
+}
+
+.davyGray_text {
+    color: var(--davy_gray);
+}
+
 .text_xs {
+    font-size: 12px;
+}
+
+.text_sm {
     font-size: 14px;
+}
+
+.text_lg {
+    font-size: 18px;
+}
+
+.text_24 {
+    font-size: 24px;
+}
+
+.text_lg {
+    font-size: 18px;
 }
 
 .text_32 {
@@ -83,7 +109,15 @@
 }
 
 .lh_24 {
-    line-height: 24px;
+    line-height: 24px !important;
+}
+
+.lh_26 {
+    line-height: 26px;
+}
+
+.lh_36 {
+    line-height: 36px;
 }
 
 .lh_62 {
@@ -162,6 +196,7 @@
     top: -100%;
     background: var(--hero_bg);
     animation: slideDown 2.2s ease-in-out forwards;
+    z-index: 9998 !important;
 }
 
 
@@ -192,7 +227,8 @@
     padding: 56px 0 48px;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 77vh;
+    max-height: 80vh;
 }
 
 
@@ -247,6 +283,79 @@
 
 /* --------------- hero section end --------------- */
 
+/* --------------- app review section start --------------- */
+#app_review_section {
+    padding: 48px 0;
+    background: var(--hero_bg);
+}
+
+.review_container {
+    max-width: 655px;
+    gap: 112px;
+}
+
+.app_rate_content {
+    gap: 56px;
+}
+
+.app_rate_content_2 {
+    border-left: 1.5px solid var(--deep_violet);
+    padding: 9px 24px;
+}
+
+.get_strt_btn {
+    color: #33134D;
+}
+
+/* --------------- app review section end --------------- */
+
+/* --------------- tools section start --------------- */
+#tools_section {
+    padding: 80px 0;
+}
+
+.tools_content {
+    gap: 72px;
+}
+
+.tools_left {
+    padding: 25px 0 9px 54px;
+    background: var(--baby_blue);
+}
+
+.tools_left_inner_div {
+    max-width: 90px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #E5EFFF, #E5EFFF00);
+}
+
+.accordion_header {
+    padding: 13px 15px;
+    font-size: 20px;
+    background: var(--soft_lilac);
+    width: auto;
+}
+
+.accordion_stick_img_div {
+    padding: 0 26px;
+}
+
+.accordion_stick_img {
+    max-height: 200px;
+    height: 80%;
+}
+
+.get_strt_btn_2 {
+    margin-top: 20px;
+    color: var(--deep_violet)
+}
+
+/* --------------- tools section end --------------- */
+
+
 
 /* =========== animation ============= */
 @keyframes slideDown {
@@ -282,7 +391,7 @@
 
     100% {
         top: 70px;
-        height: 100%;
+        height: 90%;
     }
 }
 
