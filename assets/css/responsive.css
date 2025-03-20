@@ -34,7 +34,8 @@
 
     /* ---------------------------- header start ---------------------------- */
     #header {
-        height: auto;
+        min-height: 50px;
+        height: 100%;
     }
 
     .navbar {
