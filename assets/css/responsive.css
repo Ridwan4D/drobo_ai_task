@@ -1,3 +1,43 @@
+@media (max-width:1440px) {
+
+    /* ---------------------------- hero section start ---------------------------- */
+    #hero_section {
+        min-height: 88vh;
+        max-height: 90vh;
+    }
+
+    .hero_ellipse {
+        bottom: -220px;
+    }
+
+    /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -190px;
+            left: 5.2%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -190px;
+            right: 5.2%;
+        }
+    }
+}
+
 @media (max-width:1024px) {
     .container {
         padding: 0 15px !important;
@@ -5,7 +45,7 @@
 
     /* ---------------------------- header start ---------------------------- */
     #header {
-        height: auto;
+        max-height: 70px;
     }
 
     .navbar {
@@ -21,11 +61,161 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 115px 0 48px;
+        min-height: 85vh;
+        max-height: 88vh;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+
+    /* ---------------------------- tools section start ---------------------------- */
+    .tools_left {
+        padding: 65px 0 9px 150px;
+    }
+
+    .table_img {
+        max-height: 520px;
+        height: 100%;
+    }
+
+    /* ---------------------------- tools section end ---------------------------- */
+
+    /* ---------------------------- feature section start ---------------------------- */
+    .feature_bottom {
+        gap: 20px;
+    }
+
+    .feature_card {
+        padding: 20px 20px 0;
+    }
+
+    .card_desc {
+        font-size: 16px;
+    }
+
+    .card_bottom {
+        margin-top: 45px;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
+
+
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -140px;
+            left: 3%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -140px;
+            right: 3%;
+        }
+    }
 }
 
+
+
+
+
+@media (max-width:991px) {
+
+    /* ---------------------------- hero section start ---------------------------- */
+    .hero_ellipse {
+        width: 110%;
+    }
+
+    .plain,
+    .note {
+        width: 7%;
+    }
+
+    /* ---------------------------- hero section end ---------------------------- */
+
+    /* ---------------------------- feature section start ---------------------------- */
+    .feature_top {
+        padding: 50px 50px 0 !important;
+        gap: 50px;
+    }
+
+    .feature_top_right {
+        padding: 40px 40px 0;
+        border-radius: none !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .feature_top_img {
+        width: 100%;
+    }
+
+    .feature_bottom {
+        margin-top: 25px;
+        gap: 10px;
+    }
+
+    .feature_card {
+        padding: 10px 20px 0;
+        border-radius: 10px;
+        background: var(--baby_pink);
+    }
+
+    .card_heading {
+        font-size: 16px;
+        margin-bottom: 0 !important;
+    }
+
+    .card_desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .card_bottom {
+        margin-top: 30px;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
+
+
+
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -75px;
+            left: 2%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -75px;
+            right: 2%;
+        }
+    }
+}
 
 @media (max-width:767px) {
     .container {
@@ -34,12 +224,12 @@
 
     /* ---------------------------- header start ---------------------------- */
     #header {
-        min-height: 50px;
-        height: 100%;
+        max-height: 45px;
     }
 
     .navbar {
         background: var(--hero_bg);
+        z-index: 9998 !important;
     }
 
     .nav {
@@ -55,6 +245,7 @@
         align-items: center;
         overflow: hidden;
         background: var(--hero_bg);
+        z-index: 9999 !important;
     }
 
     #menu_list {
@@ -69,6 +260,7 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 90px 0 48px;
+        min-height: 119vh;
     }
 
     .hero_heading {
@@ -76,16 +268,88 @@
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -30px;
+            left: 3%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: -30px;
+            right: 3%;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
     .container {
-        padding: 0 10px !important;
+        padding: 0 16px !important;
+    }
+
+    .wm_heading {
+        font-size: 24px;
+        line-height: 30px !important;
+    }
+
+    .section_title_para {
+        font-size: 8px;
+        line-height: 20px;
+    }
+
+    .common_btn_1,
+    .common_btn_2 {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .section_title {
+        font-size: 9px !important;
+    }
+
+    .section_title>.text_xs {
+        font-size: 8px !important;
+    }
+
+    .mt_80 {
+        margin-top: 40px;
     }
 
     /* ---------------------------- header start ---------------------------- */
+    #header {
+        max-height: 15px;
+    }
+
     .navbar {
         padding: 16px !important;
+    }
+
+    .nav {
+        top: 55px;
     }
 
     /* ---------------------------- header end ---------------------------- */
@@ -93,12 +357,203 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 80px 0 48px;
+        min-height: 60vh;
+        max-height: 62vh;
     }
 
     .hero_heading {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 13px !important;
+    }
+
+    .hero_para {
+        font-size: 12px !important;
+        padding: 0 16px;
+    }
+
+    .hero_ellipse {
+        bottom: -150px;
+    }
+
+    .plain {
+        width: 30px;
+        height: 34px;
+    }
+
+    .note {
+        width: 32px;
+        height: 32px;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+
+    /* ---------------------------- app review section start ---------------------------- */
+    #app_review_section {
+        padding: 43px 0;
+    }
+
+    .review_container {
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    /* ---------------------------- app review section end ---------------------------- */
+
+    /* ---------------------------- tools section start ---------------------------- */
+    #tools_section {
+        padding: 56px 0;
+    }
+
+    .tools_content {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .tools_left {
+        padding: 13px 0 3px 11px;
+        background: var(--baby_blue);
+    }
+
+    .accordion_container {
+        gap: 11px !important;
+    }
+
+    .accordion_item {
+        padding: 11px 9px;
+        max-height: 150px;
+    }
+
+    .accordion_btn,
+    .accordion_content {
+        gap: 22px;
+    }
+
+    .accordion_header {
+        padding: 6px 8px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .accordion_btn {
+        font-size: 14px !important;
+        line-height: 28px !important;
+    }
+
+    .accordion_stick_img_div {
+        padding: 0 14.5px;
+    }
+
+    .accordion_stick_img {
+        height: 62%;
+    }
+
+    .accordion-body {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .get_strt_btn_2 {
+        font-size: 12px;
+        margin-top: 11.5px;
+    }
+
+    /* ---------------------------- tools section end ---------------------------- */
+
+    /* ---------------------------- feature section start ---------------------------- */
+    #feature_section {
+        padding: 56px 0;
+    }
+
+    .feature_top {
+        padding: 20px 20px 0 !important;
+        gap: 26px;
+    }
+
+    .feature_top_img {
+        width: 100%;
+    }
+
+    .feature_top_left {
+        padding: 0 !important;
+    }
+
+    .feature_tl_heading {
+        max-width: 303px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 14px;
+    }
+
+    .feature_tl_para {
+        max-width: 303px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .feature_btn {
+        padding: 10px 14px !important;
+    }
+
+    .feature_top_right {
+        padding: 10px 15px 0;
+        border-radius: none !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .feature_bottom {
+        gap: 24px;
+    }
+
+    .feature_card {
+        padding: 24px 43px .2px;
+    }
+
+    .card_heading {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 6px !important;
+    }
+
+    .card_desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card_bottom {
+        margin-top: 32px;
+        padding: 17px 7px 15px 0;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
+
+
+
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: 12px;
+            left: 6.5%;
+        }
+    }
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            opacity: 1;
+            top: 12px;
+            right: 6.5%;
+        }
+    }
 }
