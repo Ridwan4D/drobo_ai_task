@@ -148,7 +148,7 @@
 
         <!-- tools section start -->
         <section id="tools_section">
-            <div class="container mx-auto">
+            <div class="container mx-auto p-0">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="section_title font_poppins d-flex gap-2 p-1 radius_32 mb-3">
                         <div class="section_title_div">
@@ -156,42 +156,122 @@
                         </div>
                         <p class="mb-0 darkGray_text text_sm me-2">3 Easy Steps</p>
                     </div>
-                    <h2 class="wm_heading p-0">How to use <span class="span_color">drobo.ai</span> tools</h2>
+                    <h2 class="wm_heading p-0 m-0">How to use <span class="span_color">drobo.ai</span> tools</h2>
                 </div>
                 <div class="d-flex tools_content">
-                    <div class="tools_left position-relative">
+                    <div class="tools_left position-relative radius_8">
                         <img src="assets/images/Table.png" alt="Table img">
-                        <div class="tools_left_inner_div position-absolute"></div>
+                        <div class="tools_left_inner_div position-absolute radius_8"></div>
                     </div>
-                    <div class="py-2">
-                        <div class="tools_right">
-                            <div class="" id="accordionExample">
-                                <div class="accordion-item">
-                                    <div class="accordion-header d-flex gap_40" id="headingOne">
-                                        <div class="font_outfit fw-semibold accordion_header">01</div>
-                                        <button class="accordion-button font_outfit fw-semibold primary_text text_24"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            Select Template
-                                        </button>
-                                    </div>
-                                    <div id="collapseOne" class="accordion-collapse collapse show d-flex gap_40 mt-2"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="tools_right">
+                        <div class="d-flex flex-column gap_20" id="accordionExample">
+                            <!-- First Accordion -->
+                            <div class="accordion-item accordion_item radius_8">
+                                <div class="accordion-header d-flex gap_40" id="headingOne">
+                                    <div class="font_outfit fw-semibold accordion_header">01</div>
+                                    <button class="accordion-button font_outfit fw-semibold primary_text text_24"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Select Template
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="d-flex gap_40 mt-2">
                                         <div class="accordion_stick_img_div">
                                             <img src="assets/images/accordion_stick.svg" alt="accordion_stick"
                                                 class="accordion_stick_img">
                                         </div>
                                         <div>
-                                            <div class="accordion-body font_roboto lh_26 davyGray_text">
+                                            <div class="accordion-body font_roboto lh_26 davyGray_text text-nowrap">
                                                 Increase the quality of your output by working with Chat by WriteBot
-                                                prebuilt prompts. This helps you guide our software to better content
-                                                and
-                                                Choose from emails, social posts, long-form blog posts, and more!
+                                                <br>
+                                                prebuilt prompts. This helps you guide our software to better
+                                                content <br>
+                                                and Choose from emails, social posts, long-form blog posts, and <br>
+                                                more!
                                             </div>
                                             <div>
                                                 <button
-                                                    class="bg-transparent border-0 font_poppins get_strt_btn_2 d-flex align-items-center gap-2 fw-medium">Get
-                                                    started <img src="assets/images/right_arrow.svg" alt="right_arrow">
+                                                    class="bg-transparent border-0 font_poppins get_strt_btn_2 d-flex align-items-center gap-2 fw-medium">
+                                                    Get started <img src="assets/images/right_arrow.svg"
+                                                        alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Accordion -->
+                            <div class="accordion-item accordion_item radius_8">
+                                <div class="accordion-header d-flex gap_40" id="headingTwo">
+                                    <div class="font_outfit fw-semibold accordion_header">02</div>
+                                    <button class="accordion-button font_outfit fw-semibold primary_text text_24"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Write Your Prompt or Context
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="d-flex gap_40 mt-2">
+                                        <div class="accordion_stick_img_div">
+                                            <img src="assets/images/accordion_stick.svg" alt="accordion_stick"
+                                                class="accordion_stick_img">
+                                        </div>
+                                        <div>
+                                            <div class="accordion-body font_roboto lh_26 davyGray_text text-nowrap">
+                                                Increase the quality of your output by working with Chat by WriteBot
+                                                <br>
+                                                prebuilt prompts. This helps you guide our software to better
+                                                content <br>
+                                                and Choose from emails, social posts, long-form blog posts, and <br>
+                                                more!
+                                            </div>
+                                            <div>
+                                                <button
+                                                    class="bg-transparent border-0 font_poppins get_strt_btn_2 d-flex align-items-center gap-2 fw-medium">
+                                                    Get started <img src="assets/images/right_arrow.svg"
+                                                        alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Accordion -->
+                            <div class="accordion-item accordion_item radius_8">
+                                <div class="accordion-header d-flex gap_40" id="headingThree">
+                                    <div class="font_outfit fw-semibold accordion_header">03</div>
+                                    <button class="accordion-button font_outfit fw-semibold primary_text text_24"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Select Advance Option & Generate
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="d-flex gap_40 mt-2">
+                                        <div class="accordion_stick_img_div">
+                                            <img src="assets/images/accordion_stick.svg" alt="accordion_stick"
+                                                class="accordion_stick_img">
+                                        </div>
+                                        <div>
+                                            <div class="accordion-body font_roboto lh_26 davyGray_text text-nowrap">
+                                                Increase the quality of your output by working with Chat by WriteBot
+                                                <br>
+                                                prebuilt prompts. This helps you guide our software to better
+                                                content <br>
+                                                and Choose from emails, social posts, long-form blog posts, and <br>
+                                                more!
+                                            </div>
+                                            <div>
+                                                <button
+                                                    class="bg-transparent border-0 font_poppins get_strt_btn_2 d-flex align-items-center gap-2 fw-medium">
+                                                    Get started <img src="assets/images/right_arrow.svg"
+                                                        alt="right_arrow">
                                                 </button>
                                             </div>
                                         </div>
