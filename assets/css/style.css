@@ -17,7 +17,8 @@
     --soft_white_gray: #F5F5F6;
     --dark_gray: #686868;
     --davy_gray: #585858;
-    --lavender_purple: #69507D
+    --lavender_purple: #69507D;
+    --baby_pink: #FAEAE6;
 }
 
 * {
@@ -143,6 +144,10 @@
 
 .radius_32 {
     border-radius: 32px;
+}
+
+.mt_80 {
+    margin-top: 80px;
 }
 
 
@@ -320,7 +325,6 @@
 }
 
 .tools_content {
-    margin-top: 80px;
     gap: 72px;
 }
 
@@ -335,7 +339,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: linear-gradient(to left, #E5EFFF, #E5EFFF00);
+    background: linear-gradient(to left, #e5efff98, #E5EFFF00);
 }
 
 .accordion_item {
@@ -367,6 +371,91 @@
 }
 
 /* --------------- tools section end --------------- */
+
+/* --------------- feature section start --------------- */
+#feature_section {
+    padding: 96px 0;
+}
+
+.feature_header {
+    line-height: 48px !important;
+}
+
+.feature_top {
+    background: var(--pastel_lilac);
+    padding: 56px;
+    padding-right: 0 !important;
+    border-radius: 10px;
+    gap: 90px;
+}
+
+.feature_tl_heading {
+    font-size: 28px;
+    color: var(--primary_color);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.feature_btn {
+    font-weight: 500;
+    margin-top: 32px;
+    padding: 16px 76px 16px 75px !important;
+}
+
+.feature_top_right {
+    background: #F0E1F8;
+    padding: 52px 0 0 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.feature_bottom {
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.feature_card {
+    padding: 40px 48px 0;
+    border-radius: 10px;
+    background: var(--baby_pink);
+}
+
+.feature_card_2 {
+    background: var(--baby_blue);
+}
+
+.card_heading {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.card_bottom {
+    margin-top: 68px;
+    background: #F6DCD5;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card_bottom_2 {
+    background: #CCE0FF;
+}
+
+/* --------------- feature section end --------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

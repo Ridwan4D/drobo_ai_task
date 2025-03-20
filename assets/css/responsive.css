@@ -79,6 +79,24 @@
 
     /* ---------------------------- tools section end ---------------------------- */
 
+    /* ---------------------------- feature section start ---------------------------- */
+    .feature_bottom {
+        gap: 20px;
+    }
+
+    .feature_card {
+        padding: 20px 20px 0;
+    }
+
+    .card_desc {
+        font-size: 16px;
+    }
+
+    .card_bottom {
+        margin-top: 45px;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
 
 
     @keyframes fly_1 {
@@ -125,6 +143,52 @@
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+
+    /* ---------------------------- feature section start ---------------------------- */
+    .feature_top {
+        padding: 50px 50px 0 !important;
+        gap: 50px;
+    }
+
+    .feature_top_right {
+        padding: 40px 40px 0;
+        border-radius: none !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .feature_top_img {
+        width: 100%;
+    }
+
+    .feature_bottom {
+        margin-top: 25px;
+        gap: 10px;
+    }
+
+    .feature_card {
+        padding: 10px 20px 0;
+        border-radius: 10px;
+        background: var(--baby_pink);
+    }
+
+    .card_heading {
+        font-size: 16px;
+        margin-bottom: 0 !important;
+    }
+
+    .card_desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .card_bottom {
+        margin-top: 30px;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
+
+
 
     @keyframes fly_1 {
         0% {
@@ -249,7 +313,7 @@
 
     .wm_heading {
         font-size: 24px;
-        line-height: 30px;
+        line-height: 30px !important;
     }
 
     .section_title_para {
@@ -269,6 +333,10 @@
 
     .section_title>.text_xs {
         font-size: 8px !important;
+    }
+
+    .mt_80 {
+        margin-top: 40px;
     }
 
     /* ---------------------------- header start ---------------------------- */
@@ -393,6 +461,73 @@
 
     /* ---------------------------- tools section end ---------------------------- */
 
+    /* ---------------------------- feature section start ---------------------------- */
+    #feature_section {
+        padding: 56px 0;
+    }
+
+    .feature_top {
+        padding: 20px 20px 0 !important;
+        gap: 26px;
+    }
+
+    .feature_top_img {
+        width: 100%;
+    }
+
+    .feature_top_left {
+        padding: 0 !important;
+    }
+
+    .feature_tl_heading {
+        max-width: 303px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 14px;
+    }
+
+    .feature_tl_para {
+        max-width: 303px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .feature_btn {
+        padding: 10px 14px !important;
+    }
+
+    .feature_top_right {
+        padding: 10px 15px 0;
+        border-radius: none !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .feature_bottom {
+        gap: 24px;
+    }
+
+    .feature_card {
+        padding: 24px 43px .2px;
+    }
+
+    .card_heading {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 6px !important;
+    }
+
+    .card_desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card_bottom {
+        margin-top: 32px;
+        padding: 17px 7px 15px 0;
+    }
+
+    /* ---------------------------- feature section end ---------------------------- */
 
 
 
