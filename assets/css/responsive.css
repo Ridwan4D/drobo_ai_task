@@ -425,7 +425,7 @@
         max-height: 150px;
     }
 
-    .accordion-header,
+    .accordion_btn,
     .accordion_content {
         gap: 22px;
     }
