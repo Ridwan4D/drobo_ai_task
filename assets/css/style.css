@@ -443,11 +443,13 @@
 }
 
 
+/* ---------------------------- content write section start ---------------------------- */
 .custom-tabs {
     display: flex;
     justify-content: center;
     gap: 36px;
     list-style: none;
+    overflow-x: auto;
 }
 
 .custom-tab-item {
@@ -464,6 +466,7 @@
     background: transparent;
     display: flex;
     gap: 7.5px;
+    white-space: nowrap;
 }
 
 .custom-tab-link.active {
@@ -491,8 +494,8 @@
     font-size: 24px;
     margin: 24px 0 20px;
 }
+/* ---------------------------- content write section start ---------------------------- */
 
-/* --------------- feature section end --------------- */
 
 
 
