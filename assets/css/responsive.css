@@ -568,6 +568,10 @@
     /* ---------------------------- feature section end ---------------------------- */
 
     /* ---------------------------- content write section start ---------------------------- */
+    .custom-tabs {
+        padding: 0 5px;
+    }
+
     .custom_tab_item_1 {
         margin-left: 170%;
     }
@@ -575,6 +579,7 @@
     .content_write_card_container {
         flex-direction: column;
         gap: 24px !important;
+        padding: 0 11px;
     }
 
     .cwcc_1 {
