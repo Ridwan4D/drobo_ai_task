@@ -117,6 +117,18 @@
 
     /* ---------------------------- package section end ---------------------------- */
 
+    /* ---------------------------- testimonial section start ---------------------------- */
+    .testimonial_card_container {
+        gap: 24px;
+    }
+
+    /* ---------------------------- testimonial section end ---------------------------- */
+
+
+
+
+
+
     @keyframes fly_1 {
         0% {
             top: -700px;
@@ -233,6 +245,17 @@
 
     /* ---------------------------- content write section end ---------------------------- */
 
+    /* ---------------------------- testimonial section start ---------------------------- */
+    .testimonial_card {
+        text-align: center;
+    }
+
+    .testimonial_card_center {
+        justify-content: center;
+    }
+
+    /* ---------------------------- testimonial section end ---------------------------- */
+
 
     @keyframes fly_1 {
         0% {
@@ -319,6 +342,8 @@
     }
 
     /* ---------------------------- package section end ---------------------------- */
+
+
 
 
 
@@ -651,6 +676,37 @@
     }
 
     /* ---------------------------- pricing section end ---------------------------- */
+
+    /* ---------------------------- testimonial section start ---------------------------- */
+    .testimonial_card_container {
+        padding: 0 24px;
+    }
+
+    .testimonial_card {
+        padding: 40px 20px;
+        text-align: start;
+    }
+
+    .testimonial_card_center {
+        justify-content: start;
+    }
+
+    /* ---------------------------- testimonial section end ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @keyframes fly_1 {
         0% {

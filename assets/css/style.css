@@ -20,6 +20,8 @@
     --lavender_purple: #69507D;
     --baby_pink: #FAEAE6;
     --dark_purple: #33134D;
+    --charleston_green: var(--charleston_green);
+    --dim_gray: #535353;
 }
 
 * {
@@ -567,6 +569,54 @@
 
 /* ---------------------------- package section end ---------------------------- */
 
+/* ---------------------------- testimonial section start ---------------------------- */
+#testimonial_section {
+    background: var(--baby_blue);
+}
+
+.testimonial_card {
+    border-radius: 8px;
+    padding: 40px;
+    background: var(--white);
+}
+
+.testimonial_card_desc {
+    line-height: 30px;
+    color: #6A6A6A;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.testimonial_card_center {
+    gap: 16px;
+    padding-bottom: 32px;
+    border-bottom: .2px solid #8588824d;
+}
+
+.reviewer_name {
+    line-height: 30px;
+    color: var(--charleston_green);
+}
+
+.reviewer_position {
+    color: var(--dim_gray);
+}
+
+.testimonial_bottom {
+    margin-top: 32px;
+}
+
+.engage_percent {
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--charleston_green);
+}
+
+.engage_text {
+    color: var(--dim_gray);
+}
+
+/* ---------------------------- testimonial section end ---------------------------- */
 
 
 
