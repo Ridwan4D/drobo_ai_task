@@ -123,6 +123,34 @@
     }
 
     /* ---------------------------- testimonial section end ---------------------------- */
+    /* ---------------------------- faq section start ---------------------------- */
+    .faq_tab_container {
+        gap: 40px !important;
+    }
+
+    .faq-custom-button {
+        align-items: start;
+    }
+
+    .nav_pills {
+        width: 100%;
+        overflow-x: scroll !important;
+    }
+
+    .faq_btn_title {
+        text-align: left;
+    }
+
+    .faq-accordion {
+        padding: 0;
+    }
+
+    .faq-accordion-item {
+        padding: 24px !important;
+        padding-bottom: 48px !important;
+    }
+
+    /* ---------------------------- faq section end ---------------------------- */
 
 
 
@@ -255,6 +283,7 @@
     }
 
     /* ---------------------------- testimonial section end ---------------------------- */
+
 
 
     @keyframes fly_1 {
@@ -692,6 +721,13 @@
     }
 
     /* ---------------------------- testimonial section end ---------------------------- */
+
+    /* ---------------------------- faq section start ---------------------------- */
+    .faq-custom-body {
+        max-width: 231px;
+    }
+
+    /* ---------------------------- faq section end ---------------------------- */
 
 
 
