@@ -110,6 +110,12 @@
 
     /* ---------------------------- content write section end ---------------------------- */
 
+    /* ---------------------------- package section start ---------------------------- */
+    .package_card_container {
+        flex-wrap: wrap;
+    }
+
+    /* ---------------------------- package section end ---------------------------- */
 
     @keyframes fly_1 {
         0% {
@@ -306,6 +312,17 @@
     }
 
     /* ---------------------------- hero section end ---------------------------- */
+
+    /* ---------------------------- package section start ---------------------------- */
+    .package_card_container {
+        flex-wrap: inherit;
+    }
+
+    /* ---------------------------- package section end ---------------------------- */
+
+
+
+
     @keyframes fly_1 {
         0% {
             top: -700px;
@@ -620,6 +637,7 @@
 
     .pricing_card_btn {
         font-size: 14px;
+        padding: 14px 72px !important;
     }
 
     .package_card_bottom {
