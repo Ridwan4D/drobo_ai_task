@@ -126,6 +126,10 @@
     line-height: 26px;
 }
 
+.lh_28 {
+    line-height: 28px;
+}
+
 .lh_36 {
     line-height: 36px;
 }
@@ -715,7 +719,6 @@
 .plan_desc {
     max-width: 606px;
     width: 100%;
-    line-height: 28px;
     color: #525252;
     margin: 20px auto 40px;
 }
@@ -723,7 +726,28 @@
 /* ---------------------------- plan section end ---------------------------- */
 
 
+/* ---------------------------- footer section start ---------------------------- */
+#footer_section {
+    background: var(--footer_bg);
+    padding-bottom: 88px;
+}
 
+.footer_site_logo {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.footer_hr {
+    border: 1px solid #595959;
+    margin: 40px 0;
+}
+
+
+.footer_condition {
+    color: #CFCFCF;
+}
+
+/* ---------------------------- footer section end ---------------------------- */
 
 
 

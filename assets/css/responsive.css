@@ -757,6 +757,25 @@
     /* ---------------------------- plan section end ---------------------------- */
 
 
+    /* ---------------------------- footer section start ---------------------------- */
+    #footer_section {
+        text-align: center;
+    }
+
+    .footer_logo_container,
+    .footer_link_list {
+        margin-bottom: 32px !important;
+    }
+
+    .footer_link_list {
+        gap: 0 !important;
+    }
+
+    .footer_links {
+        line-height: 40px;
+    }
+
+    /* ---------------------------- footer section end ---------------------------- */
 
 
 
