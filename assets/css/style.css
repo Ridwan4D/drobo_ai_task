@@ -652,11 +652,15 @@
 .faq-accordion-item {
     border-bottom: 1px solid #D6D6D6;
     padding: 24px 76px 24px 24px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
 
 .faq-accordion-item.active {
     background-color: #F5F5F6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .faq-accordion-button {
