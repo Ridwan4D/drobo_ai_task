@@ -377,6 +377,10 @@
         margin-top: 40px;
     }
 
+    .py_96 {
+        padding: 56px 0;
+    }
+
     /* ---------------------------- header start ---------------------------- */
     #header {
         max-height: 15px;
@@ -588,6 +592,47 @@
 
     /* ---------------------------- content write section end ---------------------------- */
 
+    /* ---------------------------- pricing section start ---------------------------- */
+    .package_card_container {
+        gap: 28px;
+    }
+
+    .package_card_top {
+        padding: 0 33px 28px;
+        border-bottom: 1px solid #ECDAFA;
+    }
+
+    .pc_heading {
+        font-size: 18px !important;
+        line-height: 29px;
+    }
+
+    .pc_price {
+        font-size: 43px;
+        line-height: 73px;
+    }
+
+    .price_per_month {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 28px;
+    }
+
+    .pricing_card_btn {
+        font-size: 14px;
+    }
+
+    .package_card_bottom {
+        margin-top: 28px;
+    }
+
+    .package_list_item {
+        font-size: 16px;
+        line-height: 28px !important;
+        gap: 14px;
+    }
+
+    /* ---------------------------- pricing section end ---------------------------- */
 
     @keyframes fly_1 {
         0% {

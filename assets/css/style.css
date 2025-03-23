@@ -103,6 +103,10 @@
     font-size: 24px;
 }
 
+.text_xl {
+    font-size: 20px;
+}
+
 .text_lg {
     font-size: 18px;
 }
@@ -149,6 +153,10 @@
 
 .mt_80 {
     margin-top: 80px;
+}
+
+.py_96 {
+    padding: 96px 0;
 }
 
 
@@ -499,8 +507,65 @@
     margin-top: 40px;
 }
 
-/* ---------------------------- content write section start ---------------------------- */
+/* ---------------------------- content write section end ---------------------------- */
 
+/* ---------------------------- package section start ---------------------------- */
+.package_card_container {
+    gap: 32px;
+}
+
+.package_card {
+    border-radius: 8px;
+    background: var(--pastel_lilac);
+    padding-top: 1px;
+}
+
+.card_inner_div {
+    padding: 8px 32px 32px 32px;
+}
+
+.package_card_top {
+    padding: 0 37px 32px;
+    border-bottom: 1px solid #ECDAFA;
+}
+
+.pc_price {
+    font-size: 48px;
+    line-height: 81px;
+}
+
+.price_per_month {
+    color: #666666;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.pricing_card_btn {
+    padding: 16px 80px !important;
+}
+
+.package_card_bottom {
+    margin-top: 32px;
+}
+
+.package_list {
+    padding-left: 0;
+    gap: 16px;
+}
+
+.package_list_item {
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.package_list_item::before {
+    content: url('../images/package_marker.svg');
+    margin-top: 6px;
+}
+
+/* ---------------------------- package section end ---------------------------- */
 
 
 
