@@ -290,6 +290,12 @@
 
     /* ---------------------------- testimonial section end ---------------------------- */
 
+    /* ---------------------------- footer section start ---------------------------- */
+    .footer_link_list {
+        gap: 20px, !important;
+    }
+
+    /* ---------------------------- footer section end ---------------------------- */
 
 
     @keyframes fly_1 {
