@@ -147,11 +147,17 @@
 
     .faq-accordion-item {
         padding: 24px !important;
-        padding-bottom: 48px !important;
+        padding-bottom: 25px !important;
     }
 
     /* ---------------------------- faq section end ---------------------------- */
 
+    /* ---------------------------- plan section start ---------------------------- */
+    #plan_section {
+        padding: 50px;
+    }
+
+    /* ---------------------------- plan section end ---------------------------- */
 
 
 
@@ -724,10 +730,31 @@
 
     /* ---------------------------- faq section start ---------------------------- */
     .faq-custom-body {
-        max-width: 231px;
+        max-width: 231px !important;
+    }
+
+    .faq-accordion {
+        gap: 0;
     }
 
     /* ---------------------------- faq section end ---------------------------- */
+
+    /* ---------------------------- plan section start ---------------------------- */
+    #plan_section {
+        padding: 54px 41px 40px 41px;
+    }
+
+    .plan_container {
+        padding: 16px !important;
+    }
+
+    .plan_desc {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 16px auto 32px;
+    }
+
+    /* ---------------------------- plan section end ---------------------------- */
 
 
 
