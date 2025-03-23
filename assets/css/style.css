@@ -618,6 +618,80 @@
 
 /* ---------------------------- testimonial section end ---------------------------- */
 
+/* ---------------------------- faq section start ---------------------------- */
+.faq_tab_container {
+    gap: 139px;
+}
+
+.nav_pills {
+    gap: 40px;
+    padding: 8px 24px;
+}
+
+.faq-nav-link {
+    background: none;
+    border: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #948D9A;
+}
+
+.faq-nav-link.active {
+    color: var(--deep_violet);
+    border-bottom: 2px solid var(--dark_purple);
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 24px;
+}
+
+.faq-accordion-item {
+    border-bottom: 1px solid #D6D6D6;
+    padding: 24px 76px 24px 24px;
+    border-radius: 8px;
+}
+
+.faq-accordion-item.active {
+    background-color: #F5F5F6;
+}
+
+.faq-accordion-button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-accordion-collapse {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+
+.faq_btn_title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--primary_color);
+}
+
+
+.faq-custom-body {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary_color);
+}
+
+
+
+
+/* ---------------------------- faq section end ---------------------------- */
 
 
 
