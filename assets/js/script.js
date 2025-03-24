@@ -1,6 +1,6 @@
 let menuList = document.getElementById('menu_list');
 
-// menuList.style.maxHeight = "0px";
+
 
 function toggleMenu() {
     if (menuList.style.maxHeight === "0px" || menuList.style.maxHeight === "") {
@@ -33,9 +33,91 @@ document.querySelectorAll('.accordion-collapse').forEach(collapseElement => {
         header.style.background = "#AE6CE1";
         header.style.color = "#FFFFFF";
     });
-    
+
     collapseElement.addEventListener('hide.bs.collapse', function () {
         header.style.background = "#F0E7F9";
         header.style.color = "#69507D";
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toolsLeft = document.querySelector(".tools_left");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                toolsLeft.classList.add("animate");
+            } else {
+                toolsLeft.classList.remove("animate");
+            }
+        });
+    });
+
+    observer.observe(toolsLeft);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const featureTop = document.querySelector(".feature_top");
+    const featureBottom = document.querySelector(".feature_bottom");
+    const featureCards = document.querySelectorAll(".feature_card");
+
+    const resetAnimations = () => {
+        featureTop.style.animation = 'none';
+        featureBottom.style.opacity = '0';
+        featureCards.forEach(card => {
+            card.style.animation = 'none';
+        });
+
+        featureTop.offsetHeight;
+        featureBottom.offsetHeight;
+        featureCards.forEach(card => {
+            card.offsetHeight;
+        });
+
+        featureTop.style.animation = "slideInLeft 1s forwards";
+        setTimeout(() => {
+            featureBottom.style.opacity = "1";
+            featureCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animation = "cardSlideUp 1s forwards";
+                }, index * 300);
+            });
+        }, 500);
+    };
+
+    const observerTop = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            resetAnimations();
+        }
+    }, {
+        threshold: 0.1
+    });
+
+    observerTop.observe(featureTop);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll('.section_to_animate');
+
+    const applyAnimation = (section) => {
+        section.style.animation = 'slideUp 1s forwards';
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                applyAnimation(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
 });
