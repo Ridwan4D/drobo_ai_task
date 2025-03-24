@@ -705,11 +705,31 @@
     background: var(--baby_blue);
 }
 
+@keyframes rotateAndBorderChange {
+    0% {
+        transform: rotate(-15deg);
+        border: 1px dashed #6A6A6A;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        border: 1px solid white;
+    }
+}
+
 .testimonial_card {
     border-radius: 8px;
     padding: 40px;
     background: var(--white);
+    transition: border 1s ease, transform 1s ease;
+    opacity: 0;
 }
+
+.animate-card {
+    animation: rotateAndBorderChange 1s forwards;
+    opacity: 1;
+}
+
 
 .testimonial_card_desc {
     line-height: 30px;
@@ -831,11 +851,27 @@
     background: var(--footer_bg);
 }
 
+@keyframes rotateAndBorderChange {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .plan_container {
     background: var(--pastel_lilac);
     border-radius: 16px;
     padding: 58px 0;
+    border: 2px solid transparent;
 }
+
+.animate-plan {
+    animation: rotateAndBorderChange 1s forwards;
+}
+
 
 .plan_heading {
     font-size: 48px;
