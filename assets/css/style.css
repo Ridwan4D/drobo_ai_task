@@ -611,10 +611,43 @@
 }
 
 .package_card {
+    position: relative;
     border-radius: 8px;
     background: var(--pastel_lilac);
     padding-top: 1px;
+    overflow: hidden;
+    transition: color 0.5s ease;
+    /* Smooth text color transition */
 }
+
+.package_card::before {
+    content: "";
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background: var(--deep_violet);
+    border-radius: 50%;
+    bottom: -75px;
+    right: -200px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+.package_card:hover::before {
+    transform: scale(7);
+}
+
+.package_card:hover * {
+    color: #FFF !important;
+}
+
+.package_card>* {
+    position: relative;
+    z-index: 2;
+}
+
 
 .card_inner_div {
     padding: 8px 32px 32px 32px;
@@ -638,6 +671,10 @@
 
 .pricing_card_btn {
     padding: 16px 80px !important;
+}
+
+.package_card:hover .pricing_card_btn {
+    background: var(--span_color);
 }
 
 .package_card_bottom {
