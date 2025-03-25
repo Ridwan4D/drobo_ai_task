@@ -628,8 +628,13 @@
     z-index: 2;
 }
 
+.content_write_card * {
+    transition: all 0.6s ease;
+}
+
 .content_write_card:hover>* {
     color: var(--white) !important;
+    transition-delay: 0.3s;
 }
 
 .content_write_card_heading {
