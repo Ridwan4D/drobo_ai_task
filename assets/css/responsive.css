@@ -1,5 +1,12 @@
 @media (max-width:1440px) {
 
+    /* ---------------------------- header section start ---------------------------- */
+    .mega_menu {
+        margin-left: -482px;
+    }
+
+    /* ---------------------------- header section ened ---------------------------- */
+
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         min-height: 88vh;
@@ -54,6 +61,17 @@
 
     .nav {
         gap: 0px !important;
+    }
+
+    .mega_menu {
+        margin-left: -318px;
+    }
+
+    .mega_menu .nav_pills {
+        width: 100%;
+        overflow-x: scroll !important;
+        display: flex;
+        justify-content: center;
     }
 
     /* ---------------------------- header end ---------------------------- */
@@ -199,6 +217,13 @@
 
 
 @media (max-width:991px) {
+
+    /* ---------------------------- header section start ---------------------------- */
+    .mega_menu {
+        margin-left: -190px;
+    }
+
+    /* ---------------------------- header section end ---------------------------- */
 
     /* ---------------------------- hero section start ---------------------------- */
     .hero_ellipse {

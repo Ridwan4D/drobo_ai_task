@@ -245,6 +245,48 @@
     background-color: var(--baby_blue);
 }
 
+.mega_menu {
+    /* position: relative; */
+    width: 98.7vw !important;
+    border: none;
+    margin-left: -700px;
+    background: var(--hero_bg);
+    /* z-index: 9999; */
+
+}
+
+.mega_menu>.faq_content {
+    margin-bottom: 72px;
+}
+
+.mega_menu .faq-nav-link {
+    font-size: 18px !important;
+    white-space: nowrap;
+}
+
+.mega_menu .faq_tab_container {
+    gap: 80px;
+}
+
+.mega_menu .content_write_card {
+    padding: 20px;
+}
+
+.mega_menu .content_magic_icon {
+    height: 50px;
+    width: 50px;
+}
+
+.mega_menu .content_write_card_heading {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0 14px;
+}
+
+.mega_menu .mega_menu_card_desc {
+    font-size: 11px;
+}
+
 /* --------------- header section end --------------- */
 
 /* --------------- hero section start --------------- */

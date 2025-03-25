@@ -21,12 +21,14 @@
                 </h3>
             </div>
             <ul id="menu_list" class="nav font_roboto gap_40">
-                <li class="nav-item dropdown">
-                    <a class="nav-link deepViolet_text dropdown-toggle fw-semibold lh_24" href="#" id="navbarDropdown"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item dropdown d-md-none">
+                    <a class="nav-link deepViolet_text dropdown-toggle fw-semibold lh_24" href="#"
+                        id="sm_navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ai tools <img src="assets/images/expand_less.svg" alt="expand_less.svg">
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <!-- Dropdown for small devices -->
+                    <ul class="dropdown-menu" aria-labelledby="sm_navbarDropdown">
                         <li><a class="dropdown-item deepViolet_text" href="#allWizard-tab">All Wizard</a></li>
                         <li><a class="dropdown-item deepViolet_text" href="#textGenerator-tab">Text Generator</a></li>
                         <li><a class="dropdown-item deepViolet_text" href="#videoGenerator-tab">Video Generator</a></li>
@@ -34,6 +36,339 @@
                         <li><a class="dropdown-item deepViolet_text" href="#aiImage-tab">Ai Image</a></li>
                     </ul>
                 </li>
+                <li class="nav-item dropdown d-none d-md-block">
+                    <a class="nav-link deepViolet_text dropdown-toggle fw-semibold lh_24" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ai tools <img src="assets/images/expand_less.svg" alt="expand_less.svg">
+                    </a>
+                    <!-- Mega Menu for larger devices -->
+                    <div class="mega_menu dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- ================== mega menu ==================-->
+                        <div class="faq_content container mx-auto mt_80">
+                            <div class="d-flex flex-column flex-xl-row align-items-start faq_tab_container">
+                                <div class="d-flex flex-row flex-xl-column nav-pills nav_pills me-3 align-items-start gap_40"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="faq-nav-link active" id="v-pills-textGenerate-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-textGenerate" type="button"
+                                        role="tab" aria-controls="v-pills-textGenerate" aria-selected="true"> <img
+                                            src="assets/images/content_wirte/document-text.svg" alt="document-text">
+                                        Text
+                                        Generator</button>
+                                    <button class="faq-nav-link" id="v-pills-videoGenerate-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-videoGenerate" type="button" role="tab"
+                                        aria-controls="v-pills-videoGenerate" aria-selected="false"> <img
+                                            src="assets/images/content_wirte/video-camera.svg" alt="video-camera">
+                                        Video Generator</button>
+                                    <button class="faq-nav-link" id="v-pills-textToSpeech-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-textToSpeech" type="button" role="tab"
+                                        aria-controls="v-pills-textToSpeech" aria-selected="false"> <img
+                                            src="assets/images/content_wirte/document-text.svg" alt="document-text">
+                                        Text to Speech</button>
+                                    <button class="faq-nav-link" id="v-pills-aiImages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-aiImages" type="button" role="tab"
+                                        aria-controls="v-pills-aiImages" aria-selected="false"> <img
+                                            src="assets/images/content_wirte/document-text.svg" alt="document-text">
+                                        AI
+                                        Images</button>
+                                </div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-textGenerate" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <!-- ========================= cards ======================= -->
+                                        <!-- content write card container -->
+                                        <div class="d-flex gap_20 content_write_card_container cwcc_1">
+                                            <!-- content write card 1 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Blog
+                                                    Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 2 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Email
+                                                    Template</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 3 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Social
+                                                    Media Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- content write card container -->
+                                        <div class="d-flex gap_20 content_write_card_container cwcc_1">
+                                            <!-- content write card 1 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Blog
+                                                    Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 2 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Email
+                                                    Template</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 3 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Social
+                                                    Media Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- ========================= cards ======================= -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-videoGenerate" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+                                        <!-- ========================= cards ======================= -->
+                                        <!-- content write card container -->
+                                        <div class="d-flex gap_20 content_write_card_container cwcc_1">
+                                            <!-- content write card 1 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Blog
+                                                    Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 2 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Email
+                                                    Template</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 3 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Social
+                                                    Media Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- ========================= cards ======================= -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-textToSpeech" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+                                        <!-- ========================= cards ======================= -->
+                                        <!-- content write card container -->
+                                        <div class="d-flex gap_20 content_write_card_container cwcc_1">
+                                            <!-- content write card 1 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Blog
+                                                    Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 2 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Email
+                                                    Template</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 3 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Social
+                                                    Media Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- ========================= cards ======================= -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-aiImages" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+                                        <!-- ========================= cards ======================= -->
+                                        <!-- content write card container -->
+                                        <div class="d-flex gap_20 content_write_card_container cwcc_1">
+                                            <!-- content write card 1 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Blog
+                                                    Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 2 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Email
+                                                    Template</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                            <!-- content write card 3 -->
+                                            <div class="content_write_card">
+                                                <img src="assets/images/content_wirte/content_write_icon.svg"
+                                                    alt="magic icon" class="content_magic_icon">
+                                                <h3
+                                                    class="fw-medium font_outfit primary_text content_write_card_heading">
+                                                    Social
+                                                    Media Content</h3>
+                                                <p class="mega_menu_card_desc font_roboto darkLavender_text">Fill in
+                                                    our
+                                                    form with all the
+                                                    details. We
+                                                    initiate your
+                                                    request, and it’s time to
+                                                    watch the magic unfold.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- ========================= cards ======================= -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
                 <li class="nav-item"><a class="nav-link deepViolet_text lh_24" href="#">Pricing</a></li>
                 <li class="nav-item"><a class="nav-link deepViolet_text lh_24" href="#">About us</a></li>
                 <li class="nav-item"><a class="nav-link deepViolet_text lh_24" href="#">Contact us</a></li>
