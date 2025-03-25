@@ -246,13 +246,10 @@
 }
 
 .mega_menu {
-    /* position: relative; */
     width: 98.7vw !important;
     border: none;
     margin-left: -700px;
     background: var(--hero_bg);
-    /* z-index: 9999; */
-
 }
 
 .mega_menu>.faq_content {
