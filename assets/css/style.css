@@ -678,9 +678,15 @@
     transform: scale(7);
 }
 
+.package_card * {
+    transition: all 0.6s ease;
+}
+
 .package_card:hover * {
     color: #FFF !important;
+    transition-delay: 0.3s;
 }
+
 
 .package_card>* {
     position: relative;

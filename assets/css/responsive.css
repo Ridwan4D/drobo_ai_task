@@ -79,8 +79,8 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 115px 0 48px;
-        min-height: 85vh;
-        max-height: 88vh;
+        min-height: 63vh;
+        max-height: 65vh;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
@@ -528,8 +528,8 @@
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
         padding: 80px 0 48px;
-        min-height: 60vh;
-        max-height: 62vh;
+        min-height: 66.5vh;
+        max-height: 68vh;
     }
 
     .hero_heading {
