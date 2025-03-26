@@ -8,27 +8,12 @@
     /* ---------------------------- header section ened ---------------------------- */
 
     /* ---------------------------- hero section start ---------------------------- */
-    #hero_section {
-        min-height: 88vh;
-        max-height: 90vh;
+    .hero_heading {
+        animation: font_size_increase_1 2s ease-in-out forwards;
     }
 
-    .hero_ellipse {
-        bottom: -220px;
-    }
-
-    /* ---------------------------- hero section end ---------------------------- */
-    @keyframes fly_1 {
-        0% {
-            top: -700px;
-            left: -100%;
-        }
-
-        100% {
-            opacity: 1;
-            top: -190px;
-            left: 5.2%;
-        }
+    .hero_desc {
+        animation: font_size_increase_2 2s ease-in-out forwards;
     }
 
     @keyframes fly_2 {
@@ -38,11 +23,13 @@
         }
 
         100% {
+            top: -163px;
+            right: -24%;
             opacity: 1;
-            top: -190px;
-            right: 5.2%;
         }
     }
+
+    /* ---------------------------- hero section end ---------------------------- */
 }
 
 @media (max-width:1024px) {
@@ -77,10 +64,43 @@
     /* ---------------------------- header end ---------------------------- */
 
     /* ---------------------------- hero section start ---------------------------- */
-    #hero_section {
-        padding: 115px 0 48px;
-        min-height: 63vh;
-        max-height: 65vh;
+    .outer_ring {
+        padding: 94px;
+    }
+
+    .inner_ring {
+        padding: 250px 50px 60px;
+    }
+
+    @keyframes font_size_increase_1 {
+        0% {
+            font-size: 25px;
+        }
+
+        100% {
+            font-size: 45px;
+        }
+    }
+
+    .hero_heading {
+        font-size: 45px;
+        line-height: 45px;
+        animation: font_size_increase_1 1s ease-in-out forwards;
+    }
+
+    @keyframes font_size_increase_2 {
+        0% {
+            font-size: 5px;
+        }
+
+        100% {
+            font-size: 16px;
+        }
+    }
+
+    .hero_desc {
+        font-size: 16px;
+        animation: font_size_increase_2 1s ease-in-out forwards;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
@@ -226,13 +246,43 @@
     /* ---------------------------- header section end ---------------------------- */
 
     /* ---------------------------- hero section start ---------------------------- */
-    .hero_ellipse {
-        width: 110%;
+    .outer_ring {
+        padding: 94px;
+        width: 130%;
+        margin-left: -105px;
     }
 
-    .plain,
-    .note {
-        width: 7%;
+    .inner_ring {
+        padding: 250px 50px 60px;
+    }
+
+    @keyframes font_size_increase_1 {
+        0% {
+            font-size: 25px;
+        }
+
+        100% {
+            font-size: 30px;
+        }
+    }
+
+    .hero_heading {
+        line-height: 33px;
+        animation: font_size_increase_1 1s ease-in-out forwards;
+    }
+
+    @keyframes font_size_increase_2 {
+        0% {
+            font-size: 5px;
+        }
+
+        100% {
+            font-size: 14px;
+        }
+    }
+
+    .hero_desc {
+        animation: font_size_increase_2 1s ease-in-out forwards;
     }
 
     /* ---------------------------- hero section end ---------------------------- */
@@ -527,41 +577,73 @@
 
     /* ---------------------------- hero section start ---------------------------- */
     #hero_section {
-        padding: 80px 0 48px;
-        min-height: 66.5vh;
-        max-height: 68vh;
+        overflow-x: hidden;
+        padding-top: 100px;
+    }
+
+    @keyframes hero_slide {
+        0% {
+            transform: translateY(-100%);
+            padding: 330px;
+            background: linear-gradient(to top, #EAD4FF, #EAD4FF, #EAD4FF, #EAD4FF);
+        }
+
+        100% {
+            padding: 65px;
+            transform: translateY(-10%);
+            background: linear-gradient(to top, #EAD4FF, var(--hero_bg), var(--hero_bg), var(--hero_bg));
+        }
+    }
+
+    .outer_ring {
+        padding: 65px;
+        padding-top: 35px;
+        width: 180%;
+        margin-left: -225px;
+    }
+
+    .inner_ring {
+        padding: 250px 50px 50px;
+    }
+
+    @keyframes font_size_increase_1 {
+        0% {
+            font-size: 25px;
+        }
+
+        100% {
+            font-size: 24px;
+        }
     }
 
     .hero_heading {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 13px !important;
+        line-height: 45px;
+        animation: font_size_increase_1 1s ease-in-out forwards;
+    }
+
+    @keyframes font_size_increase_2 {
+        0% {
+            font-size: 5px;
+        }
+
+        100% {
+            font-size: 12px;
+        }
     }
 
     .hero_para {
-        font-size: 12px !important;
-        padding: 0 16px;
+        font-size: 12px;
+        margin-top: 13px;
+        animation: font_size_increase_2 1s ease-in-out forwards;
     }
 
-    .hero_ellipse {
-        bottom: -150px;
-    }
-
-    .plain {
-        width: 30px;
-        height: 34px;
-    }
-
-    .note {
-        width: 32px;
-        height: 32px;
-    }
 
     /* ---------------------------- hero section end ---------------------------- */
 
     /* ---------------------------- app review section start ---------------------------- */
     #app_review_section {
         padding: 43px 0;
+        margin-top: -270px;
     }
 
     .review_container {
@@ -866,5 +948,20 @@
             top: 12px;
             right: 6.5%;
         }
+    }
+}
+
+
+
+
+@media (max-width: 475px) {
+    .outer_ring {
+        margin-left: -155px;
+    }
+}
+
+@media (max-width: 375px) {
+    .outer_ring {
+        margin-left: -135px;
     }
 }
