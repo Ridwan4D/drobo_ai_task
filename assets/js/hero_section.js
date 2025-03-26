@@ -8,3 +8,10 @@ btn_id.addEventListener("mouseover", () => {
 btn_id.addEventListener("click", () => {
     mega_menu.style.display = "none";
 });
+
+// Close the menu when clicking outside
+document.addEventListener("click", (e) => {
+    if (!mega_menu.contains(e.target) && !btn_id.contains(e.target)) {
+        mega_menu.style.display = "none";
+    }
+});

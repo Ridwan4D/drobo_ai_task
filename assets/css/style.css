@@ -299,6 +299,10 @@
         background: linear-gradient(to top, #EAD4FF, #EAD4FF, #EAD4FF, #EAD4FF);
     }
 
+    50% {
+        background: linear-gradient(to top, #EAD4FF, #EAD4FF, var(--hero_bg), var(--hero_bg));
+    }
+
     100% {
         padding: 120px;
         transform: translateY(0);
@@ -665,6 +669,10 @@
     overflow: hidden;
 }
 
+.content_write_card:hover {
+    cursor: pointer;
+}
+
 .content_write_card::before {
     content: "";
     position: absolute;
@@ -723,6 +731,10 @@
     overflow: hidden;
     transition: color 0.5s ease;
     /* Smooth text color transition */
+}
+
+.package_card :hover {
+    cursor: pointer;
 }
 
 .package_card::before {
