@@ -299,9 +299,9 @@
         background: linear-gradient(to top, #EAD4FF, #EAD4FF, #EAD4FF, #EAD4FF);
     }
 
-    50% {
+    /* 50% {
         background: linear-gradient(to top, #EAD4FF, #EAD4FF, var(--hero_bg), var(--hero_bg));
-    }
+    } */
 
     100% {
         padding: 120px;

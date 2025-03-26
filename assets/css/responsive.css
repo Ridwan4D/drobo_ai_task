@@ -85,12 +85,12 @@
     .hero_heading {
         font-size: 45px;
         line-height: 45px;
-        animation: font_size_increase_1 1s ease-in-out forwards;
+        animation: font_size_increase_1 2.2s ease-in-out forwards;
     }
 
     @keyframes font_size_increase_2 {
         0% {
-            font-size: 5px;
+            font-size: 2px;
         }
 
         100% {
@@ -100,7 +100,40 @@
 
     .hero_desc {
         font-size: 16px;
-        animation: font_size_increase_2 1s ease-in-out forwards;
+        animation: font_size_increase_2 2.5s ease-in-out forwards;
+    }
+
+    @keyframes fly_1 {
+        0% {
+            top: -700px;
+            left: -100%;
+        }
+
+        100% {
+            top: -160px;
+            left: -13%;
+            opacity: 1;
+        }
+    }
+
+
+    .plain,
+    .note {
+        width: 8.5%;
+    }
+
+
+    @keyframes fly_2 {
+        0% {
+            top: -700px;
+            right: -100%;
+        }
+
+        100% {
+            top: -157px;
+            right: -13%;
+            opacity: 1;
+        }
     }
 
     /* ---------------------------- hero section end ---------------------------- */
@@ -200,36 +233,6 @@
     }
 
     /* ---------------------------- plan section end ---------------------------- */
-
-
-
-
-
-    @keyframes fly_1 {
-        0% {
-            top: -700px;
-            left: -100%;
-        }
-
-        100% {
-            opacity: 1;
-            top: -140px;
-            left: 3%;
-        }
-    }
-
-    @keyframes fly_2 {
-        0% {
-            top: -700px;
-            right: -100%;
-        }
-
-        100% {
-            opacity: 1;
-            top: -140px;
-            right: 3%;
-        }
-    }
 }
 
 
@@ -401,11 +404,12 @@
         }
 
         100% {
+            top: -95px;
+            left: -7%;
             opacity: 1;
-            top: -75px;
-            left: 2%;
         }
     }
+
 
     @keyframes fly_2 {
         0% {
@@ -414,9 +418,9 @@
         }
 
         100% {
+            top: -90px;
+            right: -6%;
             opacity: 1;
-            top: -75px;
-            right: 2%;
         }
     }
 }
@@ -492,11 +496,12 @@
         }
 
         100% {
+            top: -80px;
+            left: -5%;
             opacity: 1;
-            top: -30px;
-            left: 3%;
         }
     }
+
 
     @keyframes fly_2 {
         0% {
@@ -505,9 +510,9 @@
         }
 
         100% {
+            top: -80px;
+            right: -5.2%;
             opacity: 1;
-            top: -30px;
-            right: 3%;
         }
     }
 }
@@ -603,7 +608,7 @@
     }
 
     .inner_ring {
-        padding: 250px 50px 50px;
+        padding: 250px 50px 45px;
     }
 
     @keyframes font_size_increase_1 {
@@ -618,12 +623,12 @@
 
     .hero_heading {
         line-height: 45px;
-        animation: font_size_increase_1 1s ease-in-out forwards;
+        animation: font_size_increase_1 2.5s ease-in-out forwards;
     }
 
     @keyframes font_size_increase_2 {
         0% {
-            font-size: 5px;
+            font-size: 2px;
         }
 
         100% {
@@ -634,7 +639,7 @@
     .hero_para {
         font-size: 12px;
         margin-top: 13px;
-        animation: font_size_increase_2 1s ease-in-out forwards;
+        animation: font_size_increase_2 2.5s ease-in-out forwards;
     }
 
 
@@ -912,18 +917,6 @@
     /* ---------------------------- footer section end ---------------------------- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     @keyframes fly_1 {
         0% {
             top: -700px;
@@ -932,7 +925,7 @@
 
         100% {
             opacity: 1;
-            top: 12px;
+            top: 10px;
             left: 6.5%;
         }
     }
@@ -945,7 +938,7 @@
 
         100% {
             opacity: 1;
-            top: 12px;
+            top: 10px;
             right: 6.5%;
         }
     }
