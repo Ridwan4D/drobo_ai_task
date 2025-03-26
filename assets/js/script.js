@@ -130,12 +130,14 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("animate-card"); // Add animation class when card is visible
+          entry.target.classList.add("animate-card");
+        } else {
+          entry.target.classList.remove("animate-card");
         }
       });
     },
     {
-      threshold: 0.1,
+      threshold: 0.1, // Trigger when 10% of the element is visible
     }
   );
 
@@ -144,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const planContainer = document.querySelector(".plan_container");
