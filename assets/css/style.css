@@ -197,17 +197,24 @@
     background: linear-gradient(135deg, var(--deep_violet) 50%, #a40cd3 50%);
     background-size: 300% 300%;
     background-position: left top;
+    transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out;
 }
 
 .common_btn_1:hover {
     background-position: right bottom;
     border: 1px solid #a40cd3;
+    transform: scale(1.05);
 }
 
 
 .common_btn_2 {
     color: var(--deep_violet);
     background: transparent;
+    transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out;
+}
+
+.common_btn_2:hover {
+    transform: scale(1.05);
 }
 
 /* --------------------- common styling end --------------------- */
@@ -719,6 +726,7 @@
 /* ---------------------------- content write section end ---------------------------- */
 
 /* ---------------------------- package section start ---------------------------- */
+
 .package_card_container {
     gap: 32px;
 }
@@ -1031,9 +1039,11 @@
 .footer_condition {
     color: #CFCFCF;
 }
-.social_icons{
+
+.social_icons {
     color: transparent;
 }
+
 /* ---------------------------- footer section end ---------------------------- */
 
 
