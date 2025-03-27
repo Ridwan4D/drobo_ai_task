@@ -221,12 +221,12 @@
 
 /* --------------- header section start --------------- */
 #header {
-    height: 110px;
     background: var(--hero_bg);
+    width: 100%;
+    z-index: 9999;
 }
 
 .navbar {
-    top: -100%;
     background: var(--hero_bg);
     animation: slideDown 2.2s ease-in-out forwards;
     z-index: 9998 !important;
