@@ -1031,7 +1031,9 @@
 .footer_condition {
     color: #CFCFCF;
 }
-
+.social_icons{
+    color: transparent;
+}
 /* ---------------------------- footer section end ---------------------------- */
 
 
