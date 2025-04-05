@@ -429,6 +429,7 @@
 
 .app_rate_content {
     gap: 56px;
+    align-items: center;
 }
 
 .app_rate_content_2 {
