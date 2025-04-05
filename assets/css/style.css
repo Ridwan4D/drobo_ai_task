@@ -257,10 +257,13 @@
 }
 
 .mega_menu {
-    width: 98.7vw !important;
+    width: 100%;
     border: none;
-    margin-left: -700px;
+    border-radius: none;
+    /* margin-left: -700px; */
     background: var(--hero_bg);
+    position: absolute;
+    top: 72px;
 }
 
 .mega_menu>.faq_content {
