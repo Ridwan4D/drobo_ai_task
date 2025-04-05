@@ -306,10 +306,6 @@
         background: linear-gradient(to top, #EAD4FF, #EAD4FF, #EAD4FF, #EAD4FF);
     }
 
-    /* 50% {
-        background: linear-gradient(to top, #EAD4FF, #EAD4FF, var(--hero_bg), var(--hero_bg));
-    } */
-
     100% {
         padding: 120px;
         transform: translateY(0);
@@ -329,7 +325,7 @@
 }
 
 .inner_ring {
-    padding: 250px 120px 80px;
+    padding: 320px 120px 80px;
     border-radius: 50%;
     background: var(--hero_bg);
     border-bottom: 2px dashed rgba(128, 128, 128, 0.24);
