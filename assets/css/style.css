@@ -9,8 +9,8 @@
     --dark_lavender: #675B70;
     --gradient_1: #E4C7FF;
     --gradient_2: #FFFFFF00;
-    --border: #E9E1FF;
     --hero_bg: #FCF9FF;
+    --border: #E9E1FF;
     --pastel_lilac: #F8F1FC;
     --baby_blue: #E5EFFF;
     --soft_lilac: #F0E7F9;
@@ -170,8 +170,12 @@
 .section_title {
     max-width: 251px;
     align-items: center;
-    border: .6px solid var(--border);
+    border: .6px solid var(--span_color);
     background: linear-gradient(to right, var(--gradient_1), var(--gradient_2));
+}
+
+.section_title_1 {
+    border: .6px solid var(--border);
 }
 
 .section_title_div {
